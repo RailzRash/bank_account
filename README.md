@@ -3,7 +3,7 @@
 <h5>(requires "awesome_print")</h5>
 <h5>some usefull commands in command line:</h5>
 
-#WITH INSTANCE METHODS
+<h5>WITH INSTANCE METHODS</h5>
  <tt>irb</tt>
 
  <tt>.load './bank_account.rb'</tt>
