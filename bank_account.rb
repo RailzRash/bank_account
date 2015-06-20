@@ -1,8 +1,8 @@
 require 'awesome_print'
 class BankAccount
-	attr_reader :balance # sets reading for variable 
-	# attr_accessor :balance // sets reading and writing for variable
+	attr_reader :
 
+	#cass methods
 	class << self
 		def create_for(first_name, last_name)
 			@accounts ||= []
@@ -10,7 +10,7 @@ class BankAccount
 		end
 
 		def find_for(first_name, last_name)
-			@accounts.find{|account| account.full_name == "#{first_name} #{last_name}"} # finds first name and last name using the full_name method
+			@accounts.find{|account| account.full_name == "#{first_name} #{last_name}"} 
 		end
 	end
 	
@@ -23,42 +23,50 @@ class BankAccount
 	#	@accounts.find{|account| account.full_name == "#{first_name} #{last_name}"} # finds first name and last name using the full_name method
 	#end
 
-	def initialize(first_name, last_name) #instantiate classes with arguments first_name and last_name and create instance variable balance because it changes
+	#intilaize method sets balance, first_name and last_name
+	def initialize(first_name, last_name) 
 		@balance = 0
-		@first_name = first_name #first name and last name instance variable set equal to the first_name and last name arguments that we pass in 
+		@first_name = first_name 
 		@last_name = last_name
 	end
-	# now when we create  BankAccount instance, it should be set with a balance=0 and the variables first_name and last name 
+	
 
-
-	def full_name #create this method so that I can return it on an instance of a method
+	#return on instance of variable, make deposit,
+	#and set withdrawal method
+	def full_name 
 		"#{@first_name} #{@last_name}"
 	end
 
+	
 	def deposit(amount)
 	@balance += amount	
 	end
 
+	#return 
 	def withdraw(amount)
 		@balance -= amount	
 	end
 
-	# old way to return balance
+	
 	#def balance
-	#	@balance # returns the balance
+	#	@balance
 	#end
 
-	def call_the_reset_method #internally call teh private reset! method
+	#call private method with call_the_reset_method
+	#and call protected_reset with reset_other_balance(other account)
+	def call_the_reset_method 
 		reset!
 	end
 
-	def reset_other_balance(other_account)  #added protected_reset, private_reset and public reset_other_balance method to check how to call both using this method
-		other_account.protected_reset! #change this one to protected_reset! and  run the command to change other account balance and it will work
+	def reset_other_balance(other_account)  
+		other_account.protected_reset! 
 	end
 
-	private # make this method(s) below private 
 
-	def reset! # resets balance to 0
+	# methods resets balance to 0
+	private 
+
+	def reset! 
 		@balance = 0
 	end
 
