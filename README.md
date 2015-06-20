@@ -1,7 +1,7 @@
 
 <h1>Ruby BankAccount class</h1>
 
-<p>To work with this program, enter these commands in irb:</p>
+<p>To work with this program, enter these commands in terminal:</p>
 
 <h5>WITH INSTANCE METHODS</h5>
 
