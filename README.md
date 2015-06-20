@@ -1,21 +1,27 @@
 
-<h1>OOP with BankAccount class through command line</h1>
+<h1>Ruby BankAccount class</h1>
 
 <p>To work with this program, enter these commands in irb:</p>
 
 <h5>WITH INSTANCE METHODS</h5>
 
- <tt>irb
+<tt>
+
+ irb
 
  irb > load './bank_account.rb'
 
  irb > bank_account = BankAccount.new("Mohammed", "Rashid")
 
- irb > ap bank_account.inspect</tt>
+ irb > ap bank_account.inspect
+</tt>
 
 <h5>INTRODUCING CLASS METHODS</h5>
  
- <tt>irb
+<tt>
+
+ irb
+
  irb > load './bank_account.rb'
 
  irb > BankAccount.create_for("Mohammed", "Rashid") 
@@ -26,10 +32,13 @@
 
  irb > Go into Any one of the accounts using find_for and deposit using bank_account.deposit(100) for that account
 
- irb > bank_account.balance</tt>
+ irb > bank_account.balance
+</tt>
 
 <h5>INTRODUCING METHOD VISIBILITY</h5>
- <tt>irb
+<tt>
+
+ irb
 
  irb > load './bank_account.rb'
 
@@ -47,4 +56,5 @@
 
  irb >  account1.reset_other_balance(account2) 
 
- irb > def reset_other_balance(other_account) and it will work</tt>
+ irb > def reset_other_balance(other_account) and it will work
+</tt>
