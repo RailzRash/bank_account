@@ -5,56 +5,50 @@
 
 <h5>WITH INSTANCE METHODS</h5>
 
-<tt>
+<tt>irb</tt>
 
- irb
+<tt>irb > load './bank_account.rb'</tt>
 
- irb > load './bank_account.rb'
+<tt>irb > bank_account = BankAccount.new("Mohammed", "Rashid")</tt>
 
- irb > bank_account = BankAccount.new("Mohammed", "Rashid")
-
- irb > ap bank_account.inspect
-</tt>
+<tt>irb > ap bank_account.inspect</tt>
 
 <h5>INTRODUCING CLASS METHODS</h5>
  
-<tt>
+<tt>irb</tt>
 
- irb
+<tt>irb > load './bank_account.rb'</tt>
 
- irb > load './bank_account.rb'
+<tt>irb > BankAccount.create_for("Mohammed", "Rashid")</tt>
 
- irb > BankAccount.create_for("Mohammed", "Rashid") 
+<tt>irb > BankAccount.create_for("Mike", "The frog")</tt>
 
- irb > BankAccount.create_for("Mike", "The frog") 
+<tt>irb > Create as many as you like</tt>
 
- irb > Create as many as you like
+<tt>irb > Go into Any one of the accounts using find_for and deposit using bank_account.deposit(100) for that account</tt>
 
- irb > Go into Any one of the accounts using find_for and deposit using bank_account.deposit(100) for that account
+<tt>irb > bank_account.balance</tt>
 
- irb > bank_account.balance
-</tt>
 
 <h5>INTRODUCING METHOD VISIBILITY</h5>
-<tt>
 
- irb
+<tt>irb</tt>
 
- irb > load './bank_account.rb'
+<tt>irb > load './bank_account.rb'</tt>
 
- irb > bank_account.reset! 
+<tt>irb > bank_account.reset!</tt>
 
- irb > create another method call_the_reset_method
+<tt>irb > create another method call_the_reset_method</tt>
 
- irb >load './bank_account.rb'
+<tt>irb >load './bank_account.rb'</tt>
 
- irb > bank_account.call_the_reset_method // after creating the method, use this instead
+<tt>irb > bank_account.call_the_reset_method</tt>
 
- irb > account1 = BankAccount.new("Jason", "Seifer") // create two accounts to test protected method
+<tt>irb > account1 = BankAccount.new("Jason", "Seifer")</tt>
 
- irb > account2 = BankAccount.new("Mike", "The Frog")
+<tt>irb > account2 = BankAccount.new("Mike", "The Frog")</tt>
 
- irb >  account1.reset_other_balance(account2) 
+<tt>irb >  account1.reset_other_balance(account2)</tt> 
 
- irb > def reset_other_balance(other_account) and it will work
-</tt>
+
+
