@@ -17,8 +17,7 @@ irb > ap bank_account.inspect
 
 <h5>INTRODUCING CLASS METHODS</h5>
  
-<tt>
-irb
+```
 
 irb > load './bank_account.rb'
 
@@ -26,26 +25,23 @@ irb > BankAccount.create_for("Mohammed", "Rashid")
 
 irb > BankAccount.create_for("Mike", "The frog")
 
-Create as many as you like!
+#Create as many as you like!
 
-Go into Any one of the accounts using find_for and deposit using bank_account.deposit(100) for that account
+#Now Go into Any one of the accounts using find_for and deposit using bank_account.deposit(100) for that account
 
 irb > bank_account.balance
-</tt>
-
+```
 
 <h5>INTRODUCING METHOD VISIBILITY</h5>
 
-<tt>
-irb
-
+```
 irb > load './bank_account.rb'
 
 irb > bank_account.reset!
 
-irb > create another method call_the_reset_method
+# create another method call_the_reset_method
 
-irb >load './bank_account.rb'
+irb > load './bank_account.rb'
 
 irb > bank_account.call_the_reset_method
 
@@ -53,8 +49,8 @@ irb > account1 = BankAccount.new("Jason", "Seifer")
 
 irb > account2 = BankAccount.new("Mike", "The Frog")
 
-irb >  account1.reset_other_balance(account2)
-</tt> 
+irb > account1.reset_other_balance(account2)
+```
 
 
 
