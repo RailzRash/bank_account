@@ -5,7 +5,7 @@
 
 <h5>WITH INSTANCE METHODS</h5>
 
-<tt>
+-----
 irb
 
 irb > load './bank_account.rb'
@@ -13,7 +13,7 @@ irb > load './bank_account.rb'
 irb > bank_account = BankAccount.new("Mohammed", "Rashid")
 
 irb > ap bank_account.inspect
-</tt>
+```
 
 <h5>INTRODUCING CLASS METHODS</h5>
  
