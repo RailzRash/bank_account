@@ -5,7 +5,7 @@
 
 <h5>WITH INSTANCE METHODS</h5>
 
------
+```
 irb
 
 irb > load './bank_account.rb'
