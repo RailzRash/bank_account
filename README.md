@@ -5,17 +5,20 @@
 
 <h5>WITH INSTANCE METHODS</h5>
 
-<tt>irb
+<tt>
+irb
 
 irb > load './bank_account.rb'
 
 irb > bank_account = BankAccount.new("Mohammed", "Rashid")
 
-irb > ap bank_account.inspect</tt>
+irb > ap bank_account.inspect
+</tt>
 
 <h5>INTRODUCING CLASS METHODS</h5>
  
-<tt>irb
+<tt>
+irb
 
 irb > load './bank_account.rb'
 
@@ -27,12 +30,14 @@ Create as many as you like!
 
 Go into Any one of the accounts using find_for and deposit using bank_account.deposit(100) for that account
 
-irb > bank_account.balance</tt>
+irb > bank_account.balance
+</tt>
 
 
 <h5>INTRODUCING METHOD VISIBILITY</h5>
 
-<tt>irb
+<tt>
+irb
 
 irb > load './bank_account.rb'
 
@@ -48,7 +53,8 @@ irb > account1 = BankAccount.new("Jason", "Seifer")
 
 irb > account2 = BankAccount.new("Mike", "The Frog")
 
-irb >  account1.reset_other_balance(account2)</tt> 
+irb >  account1.reset_other_balance(account2)
+</tt> 
 
 
 
